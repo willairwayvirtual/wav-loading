@@ -1,5 +1,5 @@
 # wav-loading
- Private Sub Button1cli_Click(sender As Object, e As EventArgs)
+  Private Sub Button1cli_Click(sender As Object, e As EventArgs)
         Timer1.Start()
         Enabled = False
 
@@ -13,3 +13,8 @@
         ProgressBar1.Increment(1)
         If ProgressBar1.Value = 1000 Then
             Timer1.Stop()
+
+        End If
+        Label1.Text = ProgressBar1.Value & (" %")
+
+    End Sub
